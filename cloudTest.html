@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PLN Cloud TEST 9</title>
+    <title>PLN Cloud TEST 10</title>
     <script src="src/wordcloud2.js"></script>
 </head>
 <body>
@@ -14,6 +14,8 @@
 
 
 <script>
+    
+    var allText;
          function readTextFile(file)
 {
     var rawFile = new XMLHttpRequest();
@@ -24,9 +26,9 @@
         {
             if(rawFile.status === 200 || rawFile.status == 0)
             {
-                var allText = rawFile.responseText;
+                allText = rawFile.responseText;
                // alert("done read "+ allText);
-                return allText;
+               
             }
         }
     } 
@@ -35,8 +37,8 @@
     
 
    // let data = 
-let results= readTextFile("test.md");
-  alert(results);
+readTextFile("test.md");
+  alert(allText);
   let data = [{"word":"Animate","freq":100 }, {"word":"BootstrapV4","freq":50 },{"word":"bubbly-bg","freq":50 },{"word":"CodeMirror","freq":50 }];
     let wordCloud = []; 
     for (let obj of data) {
