@@ -32,15 +32,9 @@
     rawFile.send(null);
 }
     
- readTextFile("test.md");
+
     
-    let data = [
-        {"word":"Animate","freq":100 },
-        {"word":"BootstrapV4","freq":50 },
-        {"word":"bubbly-bg","freq":50 },
-        {"word":"CodeMirror","freq":50 },
-         
-    ];
+    let data =  readTextFile("test.md");
 
     let wordCloud = [];
     for (let obj of data) {
