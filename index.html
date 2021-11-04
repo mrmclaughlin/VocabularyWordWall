@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PLN Cloud TEST 1</title>
+    <script src="src/wordcloud2.js"></script>
+</head>
+<body>
+    
+<canvas id="example" class="word_cloud" width="1000px" height ="500px" style="width:100%;"></canvas>
+
+
+
+
+
+<script>
+    let data = [
+        {"word":"Animate","freq":100 },
+        {"word":"BootstrapV4","freq":50 },
+        {"word":"bubbly-bg","freq":50 },
+        {"word":"CodeMirror","freq":50 },
+         
+    ];
+
+    let wordCloud = [];
+    for (let obj of data) {
+        wordCloud.push([obj.word, obj.freq])
+    }
+
+
+    WordCloud.minFontSize = "15px";
+    WordCloud(document.getElementById('example'),{ list: wordCloud, backgroundColor : "black", gridSize : 4});
+    
+   
+
+</script>
+
+</body>
+</html>

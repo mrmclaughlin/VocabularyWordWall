@@ -1,0 +1,20 @@
+[
+{"word":"Animate","freq":100 },
+{"word":"BootstrapV4","freq":50 },
+{"word":"bubbly-bg","freq":50 },
+{"word":"CodeMirror","freq":50 },
+{"word":"CryptoJS","freq":30 "},
+{"word":"D3V5","freq":30 },
+{"word":"EChartsV4","freq":30 },
+{"word":"FontAwesomeV5","freq":30 },
+{"word":"gijgo","freq":30 },
+{"word":"Hotkeys","freq":10 },
+{"word":"js-xlsx","freq":10 },
+{"word":"JSEncrypt","freq":10 },
+{"word":"Leaflet","freq":10 },
+{"word":"Leaflet.Editable","freq":10 },
+{"word":"Leaflet.heat","freq":10 },
+{"word":"Marked","freq":10},
+{"word":"PDFObject","freq":10 },
+{"word":"VideoJS","freq":10 }
+]

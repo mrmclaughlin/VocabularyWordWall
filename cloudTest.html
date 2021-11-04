@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PLN Cloud TEST 1</title>
+    <script src="src/wordcloud2.js"></script>
+</head>
+<body> 
+    HI
+<canvas id="example" class="word_cloud" width="1000px" height ="500px" style="width:100%;"></canvas>
+<script>
+    
+     function readTextFile(file)
+{
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                alert(allText);
+            }
+        }
+    }
+    rawFile.send(null);
+}
+    
+     let data = readTextFile("test.md");
+
+    let wordCloud = [];
+    for (let obj of data) {
+        wordCloud.push([obj.word, obj.freq])
+    }
+    WordCloud.minFontSize = "15px";
+    WordCloud(document.getElementById('example'),{ list: wordCloud, backgroundColor : "black", gridSize : 4});
+    
+   
+
+</script>
+
+</body>
+</html>
+
+
+
+
+ 
