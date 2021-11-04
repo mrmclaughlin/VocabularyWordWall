@@ -36,7 +36,7 @@
     
     let data =  readTextFile("test.md");
 
-     
+    let wordCloud = []; 
     for (let obj of data) {
         wordCloud.push([obj.word, obj.freq])
     }
