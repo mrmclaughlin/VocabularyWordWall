@@ -2,15 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PLN Cloud TEST 1</title>
+    <title>PLN Cloud TEST</title>
     <script src="src/wordcloud2.js"></script>
 </head>
-<body> 
-    HI
-<canvas id="example" class="word_cloud" width="1000px" height ="500px" style="width:100%;"></canvas>
-<script>
+<body>
     
-     function readTextFile(file)
+<canvas id="example" class="word_cloud" width="1000px" height ="500px" style="width:100%;"></canvas>
+
+
+
+
+
+<script>
+         function readTextFile(file)
 {
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, false);
@@ -28,12 +32,22 @@
     rawFile.send(null);
 }
     
-     let data = readTextFile("test.md");
+ readTextFile("test.md");
+    
+    let data = [
+        {"word":"Animate","freq":100 },
+        {"word":"BootstrapV4","freq":50 },
+        {"word":"bubbly-bg","freq":50 },
+        {"word":"CodeMirror","freq":50 },
+         
+    ];
 
     let wordCloud = [];
     for (let obj of data) {
         wordCloud.push([obj.word, obj.freq])
     }
+
+
     WordCloud.minFontSize = "15px";
     WordCloud(document.getElementById('example'),{ list: wordCloud, backgroundColor : "black", gridSize : 4});
     
@@ -44,7 +58,4 @@
 </body>
 </html>
 
-
-
-
- 
+   
