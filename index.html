@@ -2,36 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PLN Cloud TEST2</title>
+    <title>Vocabulary Cloud</title>
     <script src="src/wordcloud2.js"></script>
+    <style>
+        body
+        {background: black;}
+    </style>
 </head>
-<body>
+<body> 
     
-<canvas id="example" class="word_cloud" width="1000px" height ="500px" style="width:100%;"></canvas>
+
+<select id="className" onchange="myFunction()">
+  <option value="">Choose a class</option>
+  <option value="">no class</option>
+  <option value="?class=testclass">same test class</option>
+  <option value="?class=newclass">still same class</option>
+    </select></br>
 
 
 
 
+ 
 
 <script>
-    let data = [
-        {"word":"Animate","freq":100 },
-        {"word":"BootstrapV4","freq":50 },
-        {"word":"bubbly-bg","freq":50 },
-        {"word":"CodeMirror","freq":50 },
-         
-    ];
+function myFunction() {
+  var x = document.getElementById("className").value;
+  document.title = x;
+   window.location = x;
+}
+</script>
+    
+    
+<canvas id="example" class="word_cloud" width="1000px" height ="500px" style="width:100%;"></canvas>
+<script>
+    
+    console.log("Thomas McLaughlin");
+    
+    function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
 
-  let wordCloud = []; 
-    for (let obj of data) {
-        wordCloud.push([obj.word, obj.freq])
+
+var fileName = "WordLists/" + getParameterByName('class')+"_wordlist.md"; 
+document.title = getParameterByName('class') +" Vocabulary Cloud";
+    
+    
+    
+    
+    
+     function readTextFile(file)
+{
+    var rawFile = new XMLHttpRequest();
+    var result;
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                allText=allText.trim();
+                allText = allText.replace(/\n/g, '');
+                 let data = allText.split(",");
+                result = data;
+            }
+        }
     }
-
-
+   
+    rawFile.send(null);
+    return result;
+}
+    let data = readTextFile(fileName);
+   
+   let wordCloud = [];
+    for(let obj of data){
+        //alert(obj);
+        let elementOfCloud = obj.split(":")
+        if(elementOfCloud.length>0)
+        wordCloud.push([elementOfCloud[0],parseInt(elementOfCloud[1])]);
+    }
     WordCloud.minFontSize = "15px";
     WordCloud(document.getElementById('example'),{ list: wordCloud, backgroundColor : "black", gridSize : 4});
-    
-   
 
 </script>
 
