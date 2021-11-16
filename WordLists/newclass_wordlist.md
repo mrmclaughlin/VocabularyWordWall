@@ -4,4 +4,5 @@ Address Bar:50,
 bitmap:20,
 vector:50,
 pixel:20,
-keyframe:50
+keyframe:50,
+browser:50
