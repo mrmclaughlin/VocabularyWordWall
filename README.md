@@ -1,4 +1,4 @@
-# Vocabulary Word Wall [![npm version]
+# Vocabulary Word Wall 
 wordcloud2.js [![npm version](https://badge.fury.io/js/wordcloud.svg)](http://badge.fury.io/js/wordcloud)
 
 Create a tag cloud/[Wordle](http://www.wordle.net/) presentation on 2D canvas or HTML.
