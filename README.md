@@ -1,7 +1,7 @@
 # Vocabulary Word Wall 
 Use this link https://qrco.de/bcYxxr to share this page.
 
-## Purpose
+# Purpose
 
 
 
@@ -9,7 +9,7 @@ Use this link https://qrco.de/bcYxxr to share this page.
 
 ______________________________________________________
 
-## Tutorial Video
+# Tutorial Video
 
 
 
