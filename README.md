@@ -11,7 +11,7 @@ ______________________________________________________
 
 ## Tutorial Video
 
-[![Tutorial vid](https://yt-embed.herokuapp.com/embed?v=2is9cc4QHS8&t=3s){:target="_blank"}](https://www.youtube.com/watch?v=2is9cc4QHS8&t=3s  "Tutorial Vid")
+[![Tutorial vid](https://yt-embed.herokuapp.com/embed?v=2is9cc4QHS8&t=3s)](https://www.youtube.com/watch?v=2is9cc4QHS8&t=3s  "Tutorial Vid")
 
 
 
