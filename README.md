@@ -1,4 +1,9 @@
 # Vocabulary Word Wall 
+Use this link https://qrco.de/bcYxxr to share this page.
+
+## Purpose
+
+##Tutorial Video
 
 
 
@@ -7,11 +12,7 @@
 
 
 
-
-
-
-
-
+_______________________________________________________
 
 ## Makes use of WordCloud2.js :
 wordcloud2.js [![npm version](https://badge.fury.io/js/wordcloud.svg)](http://badge.fury.io/js/wordcloud)
