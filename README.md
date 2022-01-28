@@ -1,5 +1,5 @@
 # Vocabulary Word Wall 
-Use this link https://qrco.de/bcYxxr to share this page.
+Use this link https://github.com/mrmclaughlin/VocabularyWordWall to share this page.
 
 ## Purpose
 
