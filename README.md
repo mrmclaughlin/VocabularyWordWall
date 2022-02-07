@@ -1,4 +1,7 @@
 # Vocabulary Word Wall 
+
+Welcome to the vocabulary word wall.  Use this free website design to create your own virtual word wall for your classroom.
+Watch the video below to learn more
 Use this link https://github.com/mrmclaughlin/VocabularyWordWall to share this page.
 
 ## Purpose
